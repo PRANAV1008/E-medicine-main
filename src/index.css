@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*::-webkit-scrollbar{
+    width:0;
+    display: none;
+    font-family: "Figtree", sans-serif;
+    font-style:normal;
+}
+.nav-active{
+    background-color: rgb(255, 233, 233);
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -ms-border-radius:8px;
+    -o-border-radius:8px;
+}
+.stickySearch{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: popIn 1s;
+    -webkit-animation: popIn 1s;
+}
+@keyframes popIn{
+    from{
+        transform: translateY(-50px);
+        -webkit-transform: translateY(-50px);
+        -moz-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+        -o-transform: translateY(-50px);
+}
+    to{
+        transform:translateY(0px)    ;
+        -webkit-transform:translateY(0px)    ;
+        -moz-transform:translateY(0px)    ;
+        -ms-transform:translateY(0px)    ;
+        -o-transform:translateY(0px)    ;
+}
+}
+/* https://github.com/Agrawalenis/Onlinemedicinefrontend_desktop */
